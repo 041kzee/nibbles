@@ -1,0 +1,6 @@
+{
+  "name": "Nibbles - Organic Baby Kitchen",
+  "description": "Wholesome, 100% organic baby food mixes and complementary purees crafted for tiny tummies and growing little adventures.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

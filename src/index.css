@@ -1,0 +1,255 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ba005c;
+  --color-primary-container: #e80074;
+  --color-primary-fixed: #ffd9e1;
+  --color-primary-fixed-dim: #ffb1c5;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed: #3f001b;
+  --color-on-primary-fixed-variant: #8f0045;
+  --color-accent-magenta-vivid: #fa198b;
+
+  --color-secondary: #815432;
+  --color-secondary-container: #ffc299;
+  --color-secondary-fixed: #ffdcc5;
+  --color-secondary-fixed-dim: #f6ba91;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #7a4e2d;
+
+  --color-tertiary: #934a17;
+  --color-tertiary-container: #b2622e;
+  --color-tertiary-fixed: #ffdbc9;
+  --color-tertiary-fixed-dim: #ffb68c;
+  --color-on-tertiary: #ffffff;
+
+  --color-surface: #fff8f5;
+  --color-surface-bright: #fff8f5;
+  --color-surface-dim: #ffd1b3;
+  --color-surface-container: #ffeade;
+  --color-surface-container-low: #fff1ea;
+  --color-surface-container-high: #ffe3d2;
+  --color-surface-container-highest: #ffdcc6;
+  --color-surface-container-lowest: #ffffff;
+
+  --color-on-surface: #2f1401;
+  --color-on-surface-variant: #5b3f46;
+  --color-outline: #8f6f76;
+  --color-outline-variant: #e3bdc5;
+
+  --color-mint-canvas: #e8f8ee;
+  --color-mint-subtle: #d6f5e3;
+  --color-organic-green: #2e8b57;
+  --color-cream-surface: #fffdf8;
+  --color-cream-container: #faf7ee;
+
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Quicksand', sans-serif;
+}
+
+/* Custom Spacing & Typography Utilities matching Nibbles Design System */
+.px-gutter {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-gutter {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.px-margin {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-margin {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.p-space-xs { padding: 0.375rem; }
+.p-space-sm { padding: 0.75rem; }
+.p-space-md { padding: 1.25rem; }
+.p-space-lg { padding: 2rem; }
+.p-space-xl { padding: 3rem; }
+
+.px-space-xs { padding-left: 0.375rem; padding-right: 0.375rem; }
+.px-space-sm { padding-left: 0.75rem; padding-right: 0.75rem; }
+.px-space-md { padding-left: 1.25rem; padding-right: 1.25rem; }
+.px-space-lg { padding-left: 2rem; padding-right: 2rem; }
+.px-space-xl { padding-left: 3rem; padding-right: 3rem; }
+
+.py-space-xs { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+.py-space-sm { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.py-space-md { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.py-space-lg { padding-top: 2rem; padding-bottom: 2rem; }
+.py-space-xl { padding-top: 3rem; padding-bottom: 3rem; }
+
+.pt-space-xs { padding-top: 0.375rem; }
+.pt-space-sm { padding-top: 0.75rem; }
+.pt-space-md { padding-top: 1.25rem; }
+.pt-space-lg { padding-top: 2rem; }
+.pt-space-xl { padding-top: 3rem; }
+
+.pb-space-xs { padding-bottom: 0.375rem; }
+.pb-space-sm { padding-bottom: 0.75rem; }
+.pb-space-md { padding-bottom: 1.25rem; }
+.pb-space-lg { padding-bottom: 2rem; }
+.pb-space-xl { padding-bottom: 3rem; }
+
+.gap-space-xs { gap: 0.375rem; }
+.gap-space-sm { gap: 0.75rem; }
+.gap-space-md { gap: 1.25rem; }
+.gap-space-lg { gap: 2rem; }
+.gap-space-xl { gap: 3rem; }
+
+.mb-space-xs { margin-bottom: 0.375rem; }
+.mb-space-sm { margin-bottom: 0.75rem; }
+.mb-space-md { margin-bottom: 1.25rem; }
+.mb-space-lg { margin-bottom: 2rem; }
+.mb-space-xl { margin-bottom: 3rem; }
+
+.mt-space-xs { margin-top: 0.375rem; }
+.mt-space-sm { margin-top: 0.75rem; }
+.mt-space-md { margin-top: 1.25rem; }
+.mt-space-lg { margin-top: 2rem; }
+.mt-space-xl { margin-top: 3rem; }
+
+/* Font Styles */
+.font-display-lg {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.text-display-lg {
+  font-size: 44px;
+  line-height: 52px;
+}
+@media (min-width: 768px) {
+  .text-display-lg {
+    font-size: 50px;
+    line-height: 58px;
+  }
+}
+
+.font-headline-xl {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.text-headline-xl {
+  font-size: 32px;
+  line-height: 40px;
+}
+@media (min-width: 768px) {
+  .text-headline-xl {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.font-headline-lg {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+}
+.text-headline-lg {
+  font-size: 26px;
+  line-height: 34px;
+}
+
+.font-headline-md {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+.text-headline-md {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.font-headline-sm {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+.text-headline-sm {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.font-body-lg {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+.text-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.font-body-md {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+.text-body-md {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font-body-sm {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+.text-body-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.font-label-lg {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.text-label-lg {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.font-label-md {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.text-label-md {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.font-label-sm {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.text-label-sm {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Material Symbols configuration */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  display: inline-block;
+  user-select: none;
+}
+.material-symbols-outlined.filled {
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Hide scrollbar for smooth tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
